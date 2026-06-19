@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import reportWebVitals from './reportWebVitals';
 
+/* Mount the React app and wrap it with the Redux Provider so components
+ can access the store via react-redux hooks (useSelector/useDispatch).*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
@@ -12,7 +14,5 @@ root.render(
   </Provider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Performance measurement helper (optional).
 reportWebVitals();
